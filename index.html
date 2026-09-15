@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Structures Implementation</title>
+<style>
+body{font-family:Arial;margin:0;background:#f4f7fb;color:#1f2937;line-height:1.6}
+header{background:#123c69;color:white;text-align:center;padding:50px 20px}
+main{max-width:1000px;margin:25px auto;padding:0 18px}
+section{background:white;margin:20px 0;padding:25px;border-radius:14px}
+h2{color:#123c69} .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px}
+.card{background:#eef5fb;padding:15px;border-radius:10px}
+table{width:100%;border-collapse:collapse;overflow:auto}th,td{padding:10px;border:1px solid #ccd8e3}th{background:#123c69;color:white}
+footer{background:#123c69;color:white;text-align:center;padding:20px}
+</style>
+</head>
+<body>
+<header><h1>Data Structures Implementation</h1><p>Core Data Structures implemented from scratch in C++</p></header>
+<main>
+<section><h2>Project Overview</h2><p>This project implements Singly Linked List, Doubly Linked List, Stack, and Queue in C++. Each structure supports insertion, deletion, searching, and traversal with proper memory management.</p></section>
+<section><h2>Implemented Data Structures</h2><div class="cards">
+<div class="card"><h3>Singly Linked List</h3><p>Nodes connected using a next pointer.</p></div>
+<div class="card"><h3>Doubly Linked List</h3><p>Nodes connected using previous and next pointers.</p></div>
+<div class="card"><h3>Stack</h3><p>Follows LIFO: Last In, First Out.</p></div>
+<div class="card"><h3>Queue</h3><p>Follows FIFO: First In, First Out.</p></div>
+</div></section>
+<section><h2>Supported Operations</h2><ul><li>Insert</li><li>Delete</li><li>Search</li><li>Traversal</li><li>Memory clearing</li><li>Unit testing</li></ul></section>
+<section><h2>Time Complexity</h2><table><tr><th>Structure</th><th>Insert</th><th>Delete</th><th>Search</th><th>Traversal</th></tr><tr><td>Singly Linked List</td><td>O(n)</td><td>O(n)</td><td>O(n)</td><td>O(n)</td></tr><tr><td>Doubly Linked List</td><td>O(n)</td><td>O(n)</td><td>O(n)</td><td>O(n)</td></tr><tr><td>Stack</td><td>O(1)</td><td>O(1)</td><td>O(n)</td><td>O(n)</td></tr><tr><td>Queue</td><td>O(1)</td><td>O(1)</td><td>O(n)</td><td>O(n)</td></tr></table><p>Space complexity: O(n) for n stored elements.</p></section>
+<section><h2>Memory Management and Testing</h2><p>Dynamic nodes are released using delete. Destructors call clear() to avoid memory leaks. The project includes a test suite for basic operations and empty-state behavior.</p></section>
+<section><h2>Project Files</h2><p>src/singly_linked_list.cpp, src/doubly_linked_list.cpp, src/stack.cpp, src/queue.cpp, tests/test_data_structures.cpp, README.md</p></section>
+</main>
+<footer>Data Structures Implementation • C++ Project</footer>
+</body>
+</html>
